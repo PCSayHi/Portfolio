@@ -1,0 +1,707 @@
+@font-face {
+    font-family: A;
+    src: url(./font/AndikaNewBasic-Regular.ttf);
+}
+
+@font-face {
+    font-family: F;
+    src: url(./font/FredokaOne-Regular.ttf);
+}
+
+body {
+    background: rgb(244,241,222);
+    background: linear-gradient(180deg, rgba(244,241,222,1) 0%, rgba(255,243,225,1) 100%);
+    font-family: A, Arial, Helvetica, sans-serif;
+}
+
+
+h1 {
+    text-align: center;
+    color: #3d405b;
+    font-family: F, Arial, Helvetica, sans-serif;
+}
+
+h2 {
+    text-align: center;
+    color: #3d405b;
+    font-family: F, Arial, Helvetica, sans-serif;
+}
+
+h3 {
+    text-align: center;
+    color: #3d405b;
+    font-family: F, Arial, Helvetica, sans-serif;
+}
+
+h4 {
+    text-align: justify;
+    color: #3d405b;
+    font-family: A, Arial, Helvetica, sans-serif;
+    text-indent: 60px
+}
+
+h5{
+    text-align: center;
+    color: #3d405b;
+    font-family: A, Arial, Helvetica, sans-serif;
+}
+
+hr{
+    color: darksalmon;
+    background-color: darksalmon;
+    opacity: 75%;
+    height:2px;
+    border-width:0;
+}
+
+/* แต่งปุ่ม */
+
+.button{
+    background-color: #f4f1de;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    font-family: F,Arial, Helvetica, sans-serif;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    margin-left: -7px;
+    margin-top: -9px;
+}
+
+#top{
+    display: block;
+    width: 200px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 18px;
+    text-decoration: none;
+    color: #333;
+    letter-spacing: 2px;
+    text-align: center;
+    position: relative;
+    transition: all .35s;
+}
+  
+#top #top2{
+    position: relative;
+    z-index: 2;
+}
+  
+#top:after{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #e69e74;
+    transition: all .35s;
+    border-radius: 25px;
+}
+  
+#top:hover{
+    color: #fff;
+}
+  
+#top:hover:after{
+    width: 100%;
+}
+
+/* แต่ง Auto Slide */
+
+#Pic1{
+    height: 650px;
+    width:100%;
+    border-radius: 30px;
+    margin-top: 90px;
+}
+
+#Pic2{
+    height: 650px;
+    width:100%;
+    border-radius: 30px;
+    margin-top: 90px;
+}
+
+#Pic3{
+    height: 650px;
+    width:100%;
+    border-radius: 30px;
+    margin-top: 90px;
+}
+
+*{box-sizing: border-box;}
+body {font-family: A,Arial, Helvetica, sans-serif;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  margin: auto;
+  background-size: cover;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: #bbb 0.6s ease;
+  text-align: center;
+  align-content: center;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+/* แนะนำตัว */
+
+.Profile{
+    width: 101%;
+    height: 100%;
+    display: flex;
+    background-color: #f2cc8f;
+    margin-left: -7px;
+}
+
+#Me{
+    width: 400px;
+    height: 100%;
+    object-fit: cover;
+    margin-left: 250px;
+    padding-top: 80px;
+    padding-bottom: 78px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 0px black;
+}
+
+.Profile>.left{
+    width: auto;
+    height: auto;
+}
+
+.Profile>.right{
+    padding: 50px;
+    margin: 80px;
+    width: auto;
+    height: auto;
+}
+
+/* สกิล */
+
+#An{
+    width: 248px;
+}
+
+#Ps{
+    width: 256px;
+}
+
+#Au{
+    width: 256px;
+}
+
+#Web{
+    width: 278px;
+}
+
+.container {
+    display: flex;
+    flex-flow: wrap;
+    row-gap: 1rem;
+    column-gap: 1rem;
+    margin-left: 72px;
+}
+
+.box{
+    padding: 2rem;
+    border-radius: 20px;
+    margin-right: 1rem;
+    margin-top: 1rem;
+    align-content: center;
+    text-align: center;
+    background-color: #e29578;
+}
+
+.box1{
+    padding: 1rem;
+    border-radius: 20px;
+    margin-right: 1rem;
+    margin-top: 1rem;
+    align-content: center;
+    text-align: center;
+    background-color: #e29578;
+}
+
+/* ความสนใจ */
+
+.Interested{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    background-color: wheat;
+}
+
+.Wen{
+    align-content: center;
+    text-align: center;
+}
+
+/* พอร์ต */
+
+#WebAssign{
+    text-decoration: none;
+}
+
+#WebAssign #GoWeb{
+    position: relative;
+    z-index: 2;
+}
+
+ #GoWeb::before{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    transition: all .35s;
+    border-radius: 25px;
+}
+
+#GoWeb:hover{
+    color: #fff;
+}
+      
+#GoWeb:hover::before{
+    width: 100%;
+} 
+
+
+div[class*=sub] {
+    width: 25%; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+}
+
+.sub-Portfolio { 
+    background-color: #f19966;
+    margin-left: 563px;
+}
+
+.As {
+  line-height: 50px;
+  height: 50px;
+  text-align: center;
+  width: 371px;
+  cursor: pointer;
+}
+
+.Assignment{
+    color: #FFF;
+    transition: all 2s;
+    position: relative;
+}
+
+.Assignment::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-color: rgba(240, 176, 134, 0.863);
+    transition: all 0.3s;
+    border-radius: 25px;
+}
+
+.Assignment:hover::before {
+    opacity: 0 ;
+    transform: scale(0.5,0.5);
+}
+
+.Assignment::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 0;
+    transition: all 0.3s;
+    transform: scale(1.2,1.2);
+    border-radius: 25px;
+}
+
+.Assignment:hover::after {
+    opacity: 1;
+    transform: scale(1,1);
+}
+
+.Submix{
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 1rem;
+    column-gap: 1rem;
+    margin-left: 250px;
+    padding-bottom: 40px;
+}
+
+.boxmix{
+    padding: 2rem;
+    border-radius: 20px;
+    margin-right: 2rem;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    align-content: center;
+    text-align: center;
+    border: darksalmon;
+    border-style: dotted;
+
+}
+
+.imgfade{
+    opacity: 1;
+    transition: .5s;
+}
+
+.imgfade:hover {
+    opacity:0.2;
+}
+  
+#Grap{
+    height: 300px;
+    width: 400px;
+    border-radius: 10px;
+}
+
+#Anime{
+    height: 300px;
+    width: 400px;
+    border-radius: 10px;
+}
+
+#UXI{
+    background-color: whitesmoke;
+    height: 300px;
+    width: 400px;
+    border-radius: 10px;
+}
+
+#VAR{
+    height: 300px;
+    width: 400px;
+    border-radius: 10px;
+}
+
+.ShowWeb{
+    text-align: center;
+    margin: 50px;
+}
+
+.no-bullets{
+    list-style-type: none;
+}
+
+/* ติดต่อ */
+
+.Contact{
+    background-color: #f2cc8f;
+    margin-top: -10px;
+    margin-left: -7px;
+    margin-bottom: -5px;
+    height: 100%;
+    width: 101%;
+}
+
+.share{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.Con{
+    font-family: F, Arial, Helvetica, sans-serif;
+    color: #3d405b;
+    font-size: 50px;
+    padding-left: 40px;
+    padding-top: 40px;
+    text-align: justify;
+    margin-bottom: 0px;
+}
+
+.left_foot{
+    text-align: justify;
+    font-size: 15px;
+}
+
+.right_foot{
+    text-align: justify;
+    font-size: 15px;
+}
+
+.share>.left_foot{
+    margin-left: 40px;
+    margin-bottom: 60px;
+}
+
+.share>.right_foot{
+    margin-left: 60px;
+    margin-bottom: 60px;
+}
+
+.divide{
+    color: darksalmon;
+    background-color: darksalmon;
+    opacity: 50%;
+    height: 3px;
+    width: 800px;
+}
+
+/* ทำให้ขนาดเว็บพอดีในแพลตฟอร์มต่างๆ */
+
+@media only screen and (max-width: 768px) {
+    
+    .button{
+        width: 100%;
+    }
+
+    .slideshow-container{
+        width: 90%;
+        padding-top : 50px;
+        margin-left: 35px;
+    }
+
+    #Pic1,#Pic2,#Pic3{
+        height: 600px;
+        width: 101%;
+        margin-left: -2px;
+    }
+
+    .Profile{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-left: 0px;
+        width: 101%;
+        margin-left: -4px;
+    }
+
+    #Me{
+        margin-left: 0px;
+        margin-top: 30px;
+        padding-top:0px;
+        padding-bottom: 0px;
+    }
+
+    .Profile>.right{
+        padding: 5px;
+        margin: 20px;
+    }
+
+    .container {
+        margin-left: 45px;
+    }
+
+    .Interested{
+        flex-direction: column;
+    }
+
+    .Wen{
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+
+    .Submix{
+        margin-left: 145px;
+    }
+
+    .boxmix{
+        margin-left: 0rem;
+    }
+
+    .sub-Portfolio { 
+        margin-left: 185px;
+    }
+
+    div[class*=sub] {
+        width: 50%; 
+    }
+
+    ul {
+        padding-inline-start: 0px;
+    }
+
+    .Contact{
+        margin-left: -7px;
+        margin-bottom: -7px;
+        width: 102%;
+    }
+
+    .share>.left_foot{
+        margin-left: 40px;
+        margin-bottom: 45px;
+    }
+
+    .share>.right_foot{
+        margin-left: 40px;
+        margin-bottom: 45px;
+    }
+
+    .divide{
+        width: 700px;
+    }
+
+}
+
+@media only screen and (max-device-width: 500px) {
+
+    .button{
+        width: 100%;
+    }
+    
+    .slideshow-container{
+        width: 80%;
+        padding-top : 70px;
+        margin-left: 49px;
+    }
+
+    #Pic1,#Pic2,#Pic3{
+        height: 400px;
+    }
+
+    .Profile{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 101%;
+        margin-left: -2px;
+    }
+
+    #Me{
+        margin-left: 0px;
+        margin-top: 30px;
+        padding-top:0px;
+        padding-bottom: 0px;
+    }
+
+    .Profile>.right{
+        padding: 5px;
+        margin: 20px;
+    }
+
+    .container {
+        margin-left: 85px;
+    }
+
+    #An{
+        width: 252px;
+    }
+    
+    #Ps{
+        width: 252px;
+    }
+    
+    #Au{
+        width: 252px;
+    }
+    
+    #Web{
+        width: 284px;
+    }
+
+    .Interested{
+        flex-direction: column;
+    }
+
+    .Wen{
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+
+    .Submix{
+        margin-left: 10px;
+    }
+
+    .boxmix{
+        margin-left: 0rem;
+    }
+
+    .sub-Portfolio { 
+        margin-left: 115px;
+    }
+
+    div[class*=sub] {
+        width: 50%; 
+    }
+
+    ul {
+        padding-inline-start: 0px;
+    }
+
+    .Contact{
+        width: 103%;
+    }
+
+    .share>.left_foot{
+        margin-left: 40px;
+        margin-bottom: 0px;
+    }
+
+    .share>.right_foot{
+        margin-left: 40px;
+        margin-bottom: 45px;
+    }
+
+    .divide{
+        width: 400px;
+    }
+}
