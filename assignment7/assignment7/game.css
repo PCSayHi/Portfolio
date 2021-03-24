@@ -1,0 +1,131 @@
+@font-face {
+    font-family: V;
+    src: url(Vollkorn-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: P;
+    src: url(PressStart2P-Regular.ttf);
+}
+
+body{
+    background-color: #D3FFFF;
+    font-family: V , Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    font-family: P;
+    font-size: 40px;
+    text-align: center;
+    color: #ff9292;
+}
+
+#game-container {
+	margin-top: 25px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.All{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#game-layer {
+    position: relative;
+    width: 500px;
+    height: 500px;
+    border: 1px solid black;
+    border-radius : 20px;
+    background-color: aliceblue;
+}
+
+.container-body{
+    width: 100%;
+}
+
+fieldset{
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: -1px;
+    padding-top: -50px;
+    padding-bottom: 50px;
+    padding-left: 60px;
+    padding-right: 60px;
+    background-color:#ffe4e4;  
+    opacity: 90%;
+    border-radius : 20px;
+    border: 0px;
+}
+
+legend{
+    text-align: center;
+    padding: 5px 5px;
+}
+
+.stroke-text{
+    -webkit-text-stroke: 0.05px #FFF6F6;
+}
+
+.square {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    border: 3px solid black;
+}
+
+.red{
+    background-color: red; 
+}
+.blue{
+    background-color: blue; 
+}
+
+.green{
+    background-color: green; 
+}
+
+#start{
+    background-color:#d6d7fa;
+    border: none;
+    color: #ff9292;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    margin: 4px 2px;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    font-family: P;
+    border-radius : 20px;
+}
+
+.button:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.box{
+    margin-left: 70px;
+}
+
+#clock{
+    margin-left: 60px;
+    margin-top: -22px;
+}
+
+@media only screen and (max-width: 768px) {
+    .fieldset {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .fieldset {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+}
+
