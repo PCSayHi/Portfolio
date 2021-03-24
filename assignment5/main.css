@@ -1,0 +1,107 @@
+@font-face {
+    font-family: M;
+    src: url(Mitr-Regular.ttf);
+}
+
+body {
+    background-color: #f4f9f9;
+    font-family: M, Arial, Helvetica, sans-serif;
+}
+
+p {
+    font-size: 50px;
+    text-align: center;
+    color: #ff9292;
+}
+
+#topic1 {
+    border-radius: 15px;
+    background-color: #ece2e1;
+    opacity:0.6;
+    width: 800px;
+    border: 5px solid #aee1e1;
+    padding: 50px;
+    margin: auto;
+    margin-bottom: 25px;
+}
+
+#comment1{
+    border-radius: 15px;
+    background-color: #ece2e1;
+    opacity:0.6;
+    width: 800px;
+    border: 5px solid #aee1e1;
+    padding: 50px;
+    margin: auto;
+    margin-bottom: 25px;
+}
+
+#comment2{
+    border-radius: 15px;
+    background-color: #ece2e1;
+    opacity:0.6;
+    width: 800px;
+    border: 5px solid #aee1e1;
+    padding: 50px;
+    margin: auto;
+    margin-bottom: 25px;
+}
+
+#text1 {
+    width: 500px; 
+    height: 90px;
+    margin: auto;
+    display: block;
+}
+
+#center{
+    width: 200px;
+    background-color: #ece2e1;
+    padding: 10px;
+    text-align: center;
+    margin: auto;
+    display: block;
+    border-radius: 15px;
+}
+
+@media only screen and (max-device-width: 768px){
+    p{
+        margin-left: 0px;
+    }
+
+    #topic1{
+        width: 500px;
+    }
+
+    #comment1{
+        width: 500px;
+    }
+
+    #comment2{
+        width: 500px;
+
+    }
+}
+
+@media only screen and (max-device-width: 500px){
+    p{
+        margin-left: 0px;
+    }
+
+    #topic1{
+        width: 300px;
+    }
+
+    #comment1{
+        width: 300px;
+    }
+
+    #comment2{
+        width: 300px;
+
+    }
+
+    #text1{
+        width: 300px;
+    }
+}
