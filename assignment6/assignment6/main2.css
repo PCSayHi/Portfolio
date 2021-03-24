@@ -1,0 +1,90 @@
+@font-face {
+    font-family: P;
+    src: url(PressStart2P-Regular.ttf);
+}
+
+@font-face {
+    font-family: B;
+    src: url(BalooDa2-Medium.ttf);
+}
+
+body{
+    background-color: #D3FFFF;
+    font-family: B , Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    font-family: P;
+    font-size: 40px;
+    text-align: center;
+    color: #ff9292;
+}
+
+.stroke-text{
+    -webkit-text-stroke: 0.01px #FFF6F6;
+  }
+
+legend{
+    text-align: center;
+    padding: 5px 5px;
+}
+
+Fieldset{
+    margin-left: 150px;
+    margin-right: 150px;
+    margin-top: 15px;
+    padding-top: -50px;
+    padding-bottom: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+    background-color:#ffe4e4;  
+    opacity: 90%;
+    border-radius : 20px;
+    border: 0px;
+}
+
+#box1{
+    text-align: center;
+    font-size: 20px;
+}
+
+#box2{
+    padding-top: 20px;
+    text-align: center;
+}
+
+.button {
+    background-color:#d6d7fa;
+    border: none;
+    color: #ff9292;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    font-family: P;
+    border-radius : 20px;
+}
+
+.button:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+@media only screen and (max-device-width: 768px){
+    fieldset{
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+}
+
+@media only screen and (max-device-width: 500px){
+    fieldset{
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+}
+
